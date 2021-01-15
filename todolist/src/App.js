@@ -1,7 +1,10 @@
+import './App.css'
+import Dialog from './components/dialog/index'
+
 function App() {
   return (
-    <div >
-      todolist
+    <div className='about'>
+      <Dialog />
     </div>
   );
 }
