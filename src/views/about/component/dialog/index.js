@@ -29,7 +29,20 @@ class Dialog extends Component {
                 <div className='dialog-message__myself'>
                     {this.mySay(this.myPreMsg)}
                 </div>
-                <div className='dialog-message--action'></div>
+                <div className='dialog-action-content'>
+                    <div className='dialog-action-buttons'>
+                        <button 
+                          type='button' 
+                          autoFocus='autofocus' 
+                          className='dialog-action-button'
+                        > 然後呢？ 😃</button>
+                        <button 
+                          type='button' 
+                          autoFocus='autofocus' 
+                          className='dialog-action-button'
+                        > 少廢話！ 🙄</button>
+                    </div>
+                </div>
                 <div className='dialog-message__youself'></div>
             </div>
         </div>

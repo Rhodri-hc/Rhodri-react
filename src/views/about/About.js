@@ -1,5 +1,5 @@
 import React , {Component} from 'react';
-import Dialog from '../../components/dialog/index';
+import Dialog from './component/dialog/index';
 import './about.css'
 
 class About extends Component {
