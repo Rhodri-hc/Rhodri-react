@@ -1,10 +1,10 @@
-import './App.css'
-import Dialog from './components/dialog/index'
+import About from './views/about/About';
+import './App.css';
 
 function App() {
   return (
     <div className='about'>
-      <Dialog />
+      <About />
     </div>
   );
 }

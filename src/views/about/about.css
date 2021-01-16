@@ -1,0 +1,23 @@
+.about-content__title{
+    display: inline-block;
+    position: relative;
+    letter-spacing: 5px;
+    line-height: 1.625
+}
+.about-content__title:after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 2px;
+    left: 4px;
+    --bg-opacity: 1;
+    background-color: #b71c1c;
+    background-color: rgba(183, 28, 28, 0.25);
+    width: 100%;
+    height: 0.5rem;
+}
+
+.about-content__meet{
+    display: inline-block;
+    padding: 3rem 5px 2rem;
+}
