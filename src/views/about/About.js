@@ -7,8 +7,7 @@ class About extends Component {
         return(
           <div className='swapper'>
             <div className='swapper-content'>
-                <img className='about-content__swapper-img' src='../../assets/images/anime-sky.jpg' alt='anime-sky'/>
-                <p className='about-content__swapper-hi' data-text='HI, RHODRI!'>HI, RHODRI!</p>
+                <p className='about-content__swapper-hi' data-text='HI,RHODRI!'>HI,RHODRI!</p>
             </div>
             <div className='about-content'>
                 <h3 className='about-content__title'>關於</h3>
