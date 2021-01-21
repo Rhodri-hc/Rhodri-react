@@ -1,3 +1,18 @@
+.swapper{
+    position: relative;
+}
+.swapper-content{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding-bottom: 70%;
+}
+
+.about-content{
+    margin: 0 auto;
+    width: 780px;
+}
 .about-content__title{
     display: inline-block;
     position: relative;
@@ -19,7 +34,7 @@
 
 .about-content__meet{
     display: inline-block;
-    padding: 3rem 5px 2rem;
+    padding: 10rem 5px 2rem;
 }
 
 .about-content__time{
