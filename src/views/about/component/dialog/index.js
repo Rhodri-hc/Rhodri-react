@@ -1,6 +1,16 @@
 import React , {Component} from 'react'; 
 // import Typed from 'typed.js';
 import './index.css';
+import {
+    DialogContent,
+    DialogWith,
+    DialogContainer,
+    MessageMyself,
+    MySays,
+    MySaysContent,
+    ActionContent,
+    ActionButton
+} from './style'
 
 // var options = {
 //     strings: ["<i>First</i> sentence.", "&amp; a second sentence."],
@@ -21,42 +31,35 @@ class Dialog extends Component {
 
     render(){
         return (
-            <div className='dialog'>
+        <DialogContent>
             <center>
-                <h4>與<i className='dialog-name'>Rhodri</i>對話中...</h4>
+                <h4>與
+                    <DialogWith>Rhodri</DialogWith>
+                    對話中...
+                </h4>
             </center>
-            <div className='dialog-container'>
-                <div className='dialog-message__myself'>
+            <DialogContainer>
+                <MessageMyself>
                     {this.mySay(this.myPreMsg)}
-                </div>
-                <div className='dialog-action-content'>
-                    <div className='dialog-action-buttons'>
-                        <button 
-                          type='button' 
-                          autoFocus='autofocus' 
-                          className='dialog-action-button'
-                        > 然後呢？ 😃</button>
-                        <button 
-                          type='button' 
-                          autoFocus='autofocus' 
-                          className='dialog-action-button'
-                        > 少廢話！ 🙄</button>
-                    </div>
-                </div>
+                </MessageMyself>
+                <ActionContent>
+                    <ActionButton> 然後呢？ 😃</ActionButton>
+                    <ActionButton> 少廢話！ 🙄</ActionButton>
+                </ActionContent>
                 <div className='dialog-message__youself'></div>
-            </div>
-        </div>
+            </DialogContainer>
+        </DialogContent>
         )
     }
     
     mySay(msgs) {
         return msgs.map(item =>{
             return(
-                <div className='myself-message' key={item.id}>
-                    <div className='myself-message-content text'>
+                <MySays key={item.id}>
+                    <MySaysContent>
                         <span>{item.msg}</span>
-                    </div>
-                </div>
+                    </MySaysContent>
+                </MySays>
             )
         })
     }
