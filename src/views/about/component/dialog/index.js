@@ -1,6 +1,5 @@
 import React , {Component} from 'react'; 
 // import Typed from 'typed.js';
-import './index.css';
 import {
     DialogContent,
     DialogWith,
