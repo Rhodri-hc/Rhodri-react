@@ -1,4 +1,5 @@
-import React , {Component} from 'react'; 
+import React , {Component} from 'react';
+import { connect } from "react-redux"; 
 // import Typed from 'typed.js';
 import {
     DialogContent,
@@ -19,15 +20,6 @@ import {
 // new Typed(".element", options);
 
 class Dialog extends Component {
-    constructor(props){
-        super(props);
-        this.myPreMsg = [
-            {msg: 'Hi, there ~', id: 1},
-            {msg: '我，張和潮啦', id: 2},
-            {msg: '一個愛前端的社畜', id: 3},
-        ]
-    }
-
     render(){
         return (
         <DialogContent>
@@ -39,7 +31,7 @@ class Dialog extends Component {
             </center>
             <DialogContainer>
                 <MessageMyself>
-                    {this.mySay(this.myPreMsg)}
+                    {this.mySay(this.props.myPreMsg)}
                 </MessageMyself>
                 <ActionContent>
                     <ActionButton> 然後呢？ 😃</ActionButton>
@@ -65,6 +57,16 @@ class Dialog extends Component {
 
 }
 
+const mapStateToProps = (state) => {
+    return {
+        myPreMsg : state.myPreMsg
+    }
+}
 
+const mapDispathToProps = (dispath) => {
+    return {
 
-export default Dialog;
+    }
+}
+
+export default connect(mapStateToProps, mapDispathToProps)(Dialog);

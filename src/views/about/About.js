@@ -1,4 +1,6 @@
 import React , {Component} from 'react';
+import { Provider } from "react-redux";
+import  store  from "../../store";
 import Dialog from './component/dialog/index';
 import {
     AboutContent,
@@ -23,7 +25,9 @@ class About extends Component {
                     <AboutMeet>遇見你</AboutMeet> 
                     真好
                 </center>
-                <Dialog />
+                <Provider store={ store }>
+                    <Dialog />
+                </Provider>
                 <center>
                     <UpdatedTime>Last updated in Jan. 20, 2021</UpdatedTime>
                 </center>
