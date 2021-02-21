@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import About from './views/about/About';
+import "./styles/tailwind.css";
 import { 
   Globalstyle,
   AboutContainer,
