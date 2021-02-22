@@ -22,7 +22,7 @@ import {
 class Dialog extends Component {
     render(){
         return (
-        <DialogContent>
+        <DialogContent className="mx-auto bg-gray-300 bg-opacity-25 rounded-md p-2">
             <center>
                 <h4>與
                     <DialogWith>Rhodri</DialogWith>

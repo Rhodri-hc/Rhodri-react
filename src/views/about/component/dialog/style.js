@@ -2,9 +2,6 @@ import styled from 'styled-components';
 
 export const DialogContent = styled.div`
     min-height: 300px;
-    padding: 2px 6px 4px;
-    background-color: rgba(242, 242, 242, 0.5);
-    border-radius: 10px;
 `;
 
 export const DialogWith = styled.i`
