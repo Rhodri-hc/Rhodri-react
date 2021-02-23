@@ -3,10 +3,7 @@ import { Provider } from "react-redux";
 import  store  from "../../store";
 import Dialog from './component/dialog/index';
 import {
-    AboutContent,
     Swapper,
-    HIRhodri,
-    AboutBlock,
     AboutTitle,
     AboutMeet,
     UpdatedTime
@@ -15,11 +12,11 @@ import {
 class About extends Component {
     render() {
         return(
-          <AboutContent>
-            <Swapper>
-                <HIRhodri>HI,RHODRI!</HIRhodri>
+          <div className="relative">
+            <Swapper className="absolute top-0 right-0 flex items-center justify-center w-full h-56">
+                <p data-text="HI,RHODRI!" className="text-gray-900 text-4xl tracking-wide font-bold">HI,RHODRI!</p>
             </Swapper>
-            <AboutBlock>
+            <div className="w-11/12 sm:w-11/12 md:w-9/12 lg:w-9/12 xl:w-8/12 my-0 mx-auto">
                 <AboutTitle>關於</AboutTitle>
                 <center>茫茫人海 
                     <AboutMeet>遇見你</AboutMeet> 
@@ -31,9 +28,8 @@ class About extends Component {
                 <center>
                     <UpdatedTime>Last updated in Jan. 20, 2021</UpdatedTime>
                 </center>
-            </AboutBlock>
-          </AboutContent>
-            
+            </div>
+          </div>
         )
     }
 }
