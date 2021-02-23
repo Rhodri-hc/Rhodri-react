@@ -8,14 +8,14 @@ import {
 class App extends  Component {
   render(){
     return (
-      <div className="font-mono">
+      <div className="font-sans">
         <div>
           <About  />
         </div>
         <div className="fixed inset-x-0 bottom-3 text-sm inline-flex justify-center">
-            <span className="-space-x-2">Crafted with</span>
+            <span className="pr-2">Crafted with</span>
             <CreaterHeart /> 
-            <span>by Rhodri</span>
+            <span className="pl-2">by Rhodri</span>
           
         </div>
       </div>

@@ -14,7 +14,7 @@ export const Swapper = styled.div`
     justify-content: center;
     width: 100%;
     height: 14rem;
-    background: url(${swapperImg}) no-repeat 60%;
+    // background: url(${swapperImg}) no-repeat 60%;
 `
 export const HIRhodri = styled.p.attrs({
     'data-text' : 'HI,RHODRI!'
@@ -31,7 +31,7 @@ export const AboutBlock = styled.div`
 `
 
 export const AboutTitle = styled.h3`
-    color: #fff;
+    color: #222;
     display: inline-block;
     position: relative;
     letter-spacing: 5px;

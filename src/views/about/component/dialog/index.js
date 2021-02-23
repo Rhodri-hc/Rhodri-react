@@ -21,6 +21,7 @@ import {
 
 class Dialog extends Component {
     render(){
+        
         return (
         <DialogContent className="mx-auto bg-gray-300 bg-opacity-25 rounded-md p-2">
             <center>
