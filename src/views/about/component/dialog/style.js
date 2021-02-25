@@ -4,38 +4,11 @@ export const DialogContent = styled.div`
     min-height: 300px;
 `;
 
-export const DialogWith = styled.i`
-    display: inline-block;
-    padding: 0 8px;
-    margin-top: 10px;
-`;
-
-export const DialogContainer = styled.div`
-    width: 100%;
-    height: 100%;
-    overflow-y: auto;
-    overflow-x: hidden;
-`;
-
-export const MessageMyself = styled.div`
-    padding: 10px 20px;
-`;
 
 export const MySays = styled.div`
-    margin: 10px 0;
     min-height: 20px;
 `;
 
-export const MySaysContent = styled.div`
-    width: auto;
-    max-width: 85%;
-    display: inline-block;
-    padding: 7px 13px;
-    border-radius: 15px;
-    color: #595a5a;
-    background-color: #ebebeb;
-    line-height: 1.3;
-`;
 
 export const ActionContent = styled.div`
     padding: 10px 20px;

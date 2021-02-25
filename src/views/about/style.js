@@ -27,15 +27,3 @@ export const AboutTitle = styled.h3`
     }
 `;
 
-export const AboutMeet = styled.span`
-    display: inline-block;
-    padding: 10rem 5px 2rem;
-    margin-top: 1rem;
-`;
-
-export const UpdatedTime = styled.i`
-    display: inline-block;
-    margin:2rem 0 3rem;
-    color: #c5c5c5;
-`
-

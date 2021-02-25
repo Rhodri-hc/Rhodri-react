@@ -4,9 +4,7 @@ import  store  from "../../store";
 import Dialog from './component/dialog/index';
 import {
     Swapper,
-    AboutTitle,
-    AboutMeet,
-    UpdatedTime
+    AboutTitle
 } from './style'
 
 class About extends Component {
@@ -19,14 +17,14 @@ class About extends Component {
             <div className="w-11/12 sm:w-11/12 md:w-9/12 lg:w-9/12 xl:w-8/12 my-0 mx-auto">
                 <AboutTitle>關於</AboutTitle>
                 <center>茫茫人海 
-                    <AboutMeet>遇見你</AboutMeet> 
+                    <span className=" inline-block pt-40 px-1 pb-2 ">遇見你</span> 
                     真好
                 </center>
                 <Provider store={ store }>
                     <Dialog />
                 </Provider>
                 <center>
-                    <UpdatedTime>Last updated in Jan. 20, 2021</UpdatedTime>
+                    <i className=" inline-block mt-8 mb-12">Last updated in Jan. 20, 2021</i>
                 </center>
             </div>
           </div>

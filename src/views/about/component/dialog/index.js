@@ -3,11 +3,7 @@ import { connect } from "react-redux";
 // import Typed from 'typed.js';
 import {
     DialogContent,
-    DialogWith,
-    DialogContainer,
-    MessageMyself,
     MySays,
-    MySaysContent,
     ActionContent,
     ActionButton
 } from './style'
@@ -21,25 +17,24 @@ import {
 
 class Dialog extends Component {
     render(){
-        
         return (
         <DialogContent className="mx-auto bg-gray-300 bg-opacity-25 rounded-md p-2">
             <center>
                 <h4>與
-                    <DialogWith>Rhodri</DialogWith>
+                    <i className=" inline-block px-2 mt-2">Rhodri</i>
                     對話中...
                 </h4>
             </center>
-            <DialogContainer>
-                <MessageMyself>
+            <div className=" w-full h-full overflow-y-auto overflow-x-hidden">
+                <div className=" py-3 px-5">
                     {this.mySay(this.props.myPreMsg)}
-                </MessageMyself>
+                </div>
                 <ActionContent>
                     <ActionButton> 然後呢？ 😃</ActionButton>
                     <ActionButton> 少廢話！ 🙄</ActionButton>
                 </ActionContent>
                 <div className='dialog-message__youself'></div>
-            </DialogContainer>
+            </div>
         </DialogContent>
         )
     }
@@ -47,10 +42,10 @@ class Dialog extends Component {
     mySay(msgs) {
         return msgs.map(item =>{
             return(
-                <MySays key={item.id}>
-                    <MySaysContent>
+                <MySays className="m-2" key={item.id}>
+                    <div className="max-w-3/4 inline-block py-2 px-4 rounded-lg text-gray-700 bg-gray-200 leading-snug">
                         <span>{item.msg}</span>
-                    </MySaysContent>
+                    </div>
                 </MySays>
             )
         })
