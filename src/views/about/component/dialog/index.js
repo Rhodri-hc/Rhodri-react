@@ -4,7 +4,6 @@ import { connect } from "react-redux";
 import {
     DialogContent,
     MySays,
-    ActionContent,
     ActionButton
 } from './style'
 
@@ -29,10 +28,10 @@ class Dialog extends Component {
                 <div className=" py-3 px-5">
                     {this.mySay(this.props.myPreMsg)}
                 </div>
-                <ActionContent>
+                <div className="py-3 px-5 text-right">
                     <ActionButton> 然後呢？ 😃</ActionButton>
                     <ActionButton> 少廢話！ 🙄</ActionButton>
-                </ActionContent>
+                </div>
                 <div className='dialog-message__youself'></div>
             </div>
         </DialogContent>

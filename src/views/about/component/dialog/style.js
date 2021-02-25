@@ -9,10 +9,15 @@ export const MySays = styled.div`
     min-height: 20px;
 `;
 
-
-export const ActionContent = styled.div`
-    padding: 10px 20px;
-    text-align: right;
+export const MySaysContent = styled.div`
+    width: auto;
+    max-width: 85%;
+    display: inline-block;
+    padding: 7px 13px;
+    border-radius: 15px;
+    color: #595a5a;
+    background-color: #ebebeb;
+    line-height: 1.3;
 `;
 
 export const ActionButton = styled.button.attrs({
