@@ -17,20 +17,20 @@ import {
 class Dialog extends Component {
     render(){
         return (
-        <DialogContent className="mx-auto bg-gray-300 bg-opacity-25 rounded-md p-2">
+        <DialogContent className="md:w-4/5 mx-auto bg-gray-300 bg-opacity-25 rounded-md p-2">
             <center>
                 <h4>與
-                    <i className=" inline-block px-2 mt-2">Rhodri</i>
+                    <i className="inline-block px-2 mt-2">Rhodri</i>
                     對話中...
                 </h4>
             </center>
-            <div className=" w-full h-full overflow-y-auto overflow-x-hidden">
-                <div className=" py-3 px-5">
+            <div className="text-xs sm:text-xs md:text-base  w-full h-full overflow-y-auto overflow-x-hidden">
+                <div className="py-3 md:pl-3">
                     {this.mySay(this.props.myPreMsg)}
                 </div>
-                <div className="py-3 px-5 text-right">
-                    <ActionButton> 然後呢？ 😃</ActionButton>
-                    <ActionButton> 少廢話！ 🙄</ActionButton>
+                <div className="py-3 pr-3 md:pr-5 text-right">
+                    <ActionButton className="py-1 md:py-2 px-2 md:px-3"> 然後呢？ 😃</ActionButton>
+                    <ActionButton className="py-1 md:py-2 px-2 md:px-3"> 少廢話！ 🙄</ActionButton>
                 </div>
                 <div className='dialog-message__youself'></div>
             </div>
