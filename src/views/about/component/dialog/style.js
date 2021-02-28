@@ -30,7 +30,6 @@ export const ActionButton = styled.button.attrs({
     color: #fff;
     line-height: 1;
     font-weight: 500;
-   
     border-radius: 4px;
     background: #777979;
     box-shadow: 2px 3px 4px 0 rgba(0,0,0,.25);

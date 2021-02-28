@@ -54,7 +54,7 @@ class Dialog extends Component {
 
 const mapStateToProps = (state) => {
     return {
-        myPreMsg : state.myPreMsg
+        myPreMsg : state.about.myPreMsg
     }
 }
 
