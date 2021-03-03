@@ -18,7 +18,7 @@ class App extends Component {
           position={null} grid={[25, 25]} 
           scale={1} 
         > 
-          <Ultraman className="handle w-20 h-20 bg-contain rounded-full border-2 border-gray-400 shadow-xl cursor-pointer inline-block"></Ultraman> 
+          <Ultraman className="handle w-20 h-20 relative bg-contain rounded-full border-2 border-gray-400 shadow-xl cursor-pointer inline-block"></Ultraman> 
         </Draggable>
 
 
