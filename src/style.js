@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-
+import portrait from './assets/images/Ultraman.jpg'
 
 const heartbeat = keyframes`
     0%{
@@ -43,4 +43,8 @@ export const CreaterHeart = styled.i`
         transform:rotate(45deg);
         transform-origin: 100% 100%;
     }
+`
+
+export const Ultraman = styled.div`
+background-image: url(${portrait});
 `
