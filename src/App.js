@@ -8,6 +8,15 @@ class App extends Component {
   render(){
     return (
       <div className="font-sans">
+        <div className="fixed w-full h-16 bg-gray-200 bg-opacity-75 ">
+          <div className="w-11/12 sm:w-11/12 md:w-9/12 lg:w-8/12 xl:w-7/12 my-0 mx-auto bg-gray-500">
+            <span className="inline-block ">
+              <i></i>
+              首頁
+            </span>
+          </div>
+        </div>
+
         <div>
           <About  />
         </div>
@@ -18,7 +27,7 @@ class App extends Component {
           position={null} grid={[25, 25]} 
           scale={1} 
         > 
-          <Ultraman className="handle w-20 h-20 relative bg-contain rounded-full border-2 border-gray-400 shadow-xl cursor-pointer inline-block"></Ultraman> 
+          <Ultraman className="handle w-16 h-16 relative bg-contain rounded-full border-2 border-gray-400 shadow-xl cursor-pointer inline-block"></Ultraman> 
         </Draggable>
 
 

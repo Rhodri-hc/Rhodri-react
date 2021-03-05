@@ -10,11 +10,11 @@ import {
 class About extends Component {
     render() {
         return(
-          <div className="relative">
+          <div className="relative pt-14">
             <Swapper className="absolute top-0 right-0 flex items-center justify-center w-full h-56">
                 <p data-text="HI,RHODRI!" className="text-gray-900 text-4xl tracking-wide font-bold">HI,RHODRI!</p>
             </Swapper>
-            <div className="w-11/12 sm:w-11/12 md:w-9/12 lg:w-9/12 xl:w-8/12 my-0 mx-auto">
+            <div className="w-11/12 sm:w-11/12 md:w-9/12 lg:w-8/12 xl:w-7/12 my-0 mx-auto">
                 <AboutTitle>關於</AboutTitle>
                 <center>茫茫人海 
                     <span className=" inline-block pt-40 px-1 pb-2 ">遇見你</span> 
