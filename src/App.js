@@ -8,12 +8,22 @@ class App extends Component {
   render(){
     return (
       <div className="font-sans">
-        <div className="fixed w-full h-16 bg-gray-200 bg-opacity-75 ">
-          <div className="w-11/12 sm:w-11/12 md:w-9/12 lg:w-8/12 xl:w-7/12 my-0 mx-auto bg-gray-500">
-            <span className="inline-block ">
-              <i></i>
-              首頁
-            </span>
+        <div className="fixed z-10 w-full h-16 bg-gray-200 bg-opacity-75 flex items-center">
+          <div className="w-11/12 sm:w-11/12 md:w-9/12 lg:w-8/12 xl:w-7/12 my-0 mx-auto text-red-900 flex items-center justify-between ">
+            <i className="inline-block text-base sm:text-lg md:text-xl lg:text-2xl">
+              Rhodri's Blog
+            </i>
+
+            <div className="flex mr-14">
+              <div className=" flex flex-col mr-6">
+                <p className="text-justify">文章</p>
+                <span className="text-red-800">ARTICLE</span>
+              </div>
+              <div className=" flex flex-col mr-6">
+                <p>關於</p>
+                <span className="text-red-800">ABOUT</span>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -27,7 +37,7 @@ class App extends Component {
           position={null} grid={[25, 25]} 
           scale={1} 
         > 
-          <Ultraman className="handle w-16 h-16 relative bg-contain rounded-full border-2 border-gray-400 shadow-xl cursor-pointer inline-block"></Ultraman> 
+          <Ultraman className="handle z-20 w-16 h-16 relative bg-contain rounded-full border-2 border-gray-400 shadow-xl cursor-pointer inline-block"></Ultraman> 
         </Draggable>
 
 
