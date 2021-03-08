@@ -72,3 +72,7 @@ export const Ultraman = styled.div`
     background-size: 200% 200%;
     animation: ${animateGlow} 5s ease infinite;
 `
+
+export const TitleNav = styled.p`
+    text-align-last: justify;
+`

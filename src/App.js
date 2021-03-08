@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import About from './views/about/About';
-import { CreaterHeart, Ultraman } from './style'
+import { CreaterHeart, Ultraman, TitleNav } from './style'
 import Draggable from 'react-draggable';
 import "./styles/tailwind.css";
 
@@ -14,13 +14,13 @@ class App extends Component {
               Rhodri's Blog
             </i>
 
-            <div className="flex mr-14">
-              <div className=" flex flex-col mr-6">
-                <p className="text-justify">文章</p>
+            <div className="flex mr-1 sm:mr-1 md:mr-14 text-xs sm:text-sm  md:text-base">
+              <div className=" flex flex-col mr-3 sm:mr-3 md:mr-6 cursor-pointer">
+                <TitleNav >文章</TitleNav>
                 <span className="text-red-800">ARTICLE</span>
               </div>
-              <div className=" flex flex-col mr-6">
-                <p>關於</p>
+              <div className=" flex flex-col mr-3 sm:mr-3 md:mr-6 cursor-pointer">
+                <TitleNav>關於</TitleNav>
                 <span className="text-red-800">ABOUT</span>
               </div>
             </div>
