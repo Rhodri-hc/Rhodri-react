@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import About from './views/about/About';
+import { BrowserRouter, Route} from 'react-router-dom';
+import About from './views/about';
+import Article from './views/article';
 import { CreaterHeart, Ultraman, TitleNav } from './style'
 import Draggable from 'react-draggable';
 import "./styles/tailwind.css";
@@ -27,17 +29,21 @@ class App extends Component {
           </div>
         </div>
 
-        <div>
-          <About  />
-        </div>
+        <BrowserRouter>
+          <div>
+            <Route path='/article' exact render={()=><Article />}></Route>
+            <Route path='/about' exact render={()=><About  />}></Route>
+          </div>
+        </BrowserRouter>
         
         <Draggable 
           handle=".handle" 
           defaultPosition={{x: 0, y: 0}} 
-          position={null} grid={[25, 25]} 
+          position={null} 
+          grid={[25, 25]} 
           scale={1} 
         > 
-          <Ultraman className="handle z-20 w-16 h-16 relative bg-contain rounded-full border-2 border-gray-400 shadow-xl cursor-pointer inline-block"></Ultraman> 
+          <Ultraman className="handle  z-20 w-16 h-16 fixed inset-y-0 left-0 bg-contain rounded-full border-2 border-gray-400 shadow-xl cursor-pointer inline-block"></Ultraman> 
         </Draggable>
 
 
