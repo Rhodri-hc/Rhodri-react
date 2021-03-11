@@ -64,10 +64,10 @@ export const Ultraman = styled.div`
     width: 100%;
     margin: 0 auto;
     transform: scale(0.75);
-    -webkit-filter: blur(5rem);
-    -moz-filter: blur(5rem);
-    -ms-filter: blur(5rem);
-    filter: blur(5rem);
+    -webkit-filter: blur(3rem);
+    -moz-filter: blur(3rem);
+    -ms-filter: blur(3rem);
+    filter: blur(3rem);
     background: linear-gradient(270deg, #fed7d7, #e53e3e);
     background-size: 200% 200%;
     animation: ${animateGlow} 5s ease infinite;

@@ -16,7 +16,7 @@ class App extends Component {
               Rhodri's Blog
             </i>
 
-            <div className="flex mr-1 sm:mr-1 md:mr-14 text-xs sm:text-sm  md:text-base">
+            <div className="flex mr-1 sm:mr-1 md:mr-4 text-xs sm:text-sm  md:text-base">
               <div className=" flex flex-col mr-3 sm:mr-3 md:mr-6 cursor-pointer">
                 <TitleNav >文章</TitleNav>
                 <span className="text-red-800">ARTICLE</span>
@@ -43,7 +43,7 @@ class App extends Component {
           grid={[25, 25]} 
           scale={1} 
         > 
-          <Ultraman className="handle  z-20 w-16 h-16 fixed inset-y-0 left-0 bg-contain rounded-full border-2 border-gray-400 shadow-xl cursor-pointer inline-block"></Ultraman> 
+          <Ultraman className="handle  z-20 w-12 md:w-16 h-12 md:h-16 fixed inset-y-0 left-0 bg-contain rounded-full border-2 border-gray-400 shadow-xl cursor-pointer inline-block"></Ultraman> 
         </Draggable>
 
 
