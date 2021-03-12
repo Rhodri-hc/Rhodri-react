@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter, Route} from 'react-router-dom';
 import About from './views/about';
 import Article from './views/article';
+import Home from './views/home';
 import { CreaterHeart, Ultraman, TitleNav } from './style'
 import Draggable from 'react-draggable';
 import "./styles/tailwind.css";
@@ -31,6 +32,7 @@ class App extends Component {
 
         <BrowserRouter>
           <div>
+            <Route path='/' exact render={()=><Home />}></Route>
             <Route path='/article' exact render={()=><Article />}></Route>
             <Route path='/about' exact render={()=><About  />}></Route>
           </div>

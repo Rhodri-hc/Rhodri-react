@@ -1,7 +1,7 @@
 import React , {Component} from 'react';
 import { Title } from "../../components/style"
 
-class Article extends Component {
+class Home extends Component {
     render() {
         return(
             <div className="relative pt-14">
@@ -13,4 +13,4 @@ class Article extends Component {
     }
 }
 
-export default Article;
+export default Home;
