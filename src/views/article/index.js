@@ -17,7 +17,7 @@ class Article extends Component {
                      </div>
                    </header>
 
-                   <ArticleContent className="mb-32 shadow-2xl">
+                   <ArticleContent className="mb-32 rounded-md  shadow-2xl">
 
                    </ArticleContent>
                 </div>
