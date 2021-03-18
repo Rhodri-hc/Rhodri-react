@@ -3,7 +3,8 @@ import { BrowserRouter, Route} from 'react-router-dom';
 import About from './views/about';
 import Article from './views/article';
 import Home from './views/home';
-import { CreaterHeart, Ultraman, TitleNav } from './style'
+import Footer from "./components/footer";
+import {  Ultraman, TitleNav } from './style'
 import Draggable from 'react-draggable';
 import "./styles/tailwind.css";
 
@@ -48,13 +49,8 @@ class App extends Component {
           <Ultraman className="handle  z-20 w-12 md:w-16 h-12 md:h-16 fixed inset-y-0 left-0 bg-contain rounded-full border-2 border-gray-400 shadow-xl cursor-pointer inline-block"></Ultraman> 
         </Draggable>
 
+        <Footer />
 
-        <div className="fixed inset-x-0 bottom-3 text-sm inline-flex justify-center">
-            <span className="pr-2">Crafted with</span>
-            <CreaterHeart /> 
-            <span className="pl-2">by Rhodri</span>
-          
-        </div>
       </div>
     )
   }
