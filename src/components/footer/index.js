@@ -16,7 +16,7 @@ class Footer extends Component {
         const month = nowDate.getMonth() + 1;
         
         
-        return month < 11 ? `${year}.0${month}` : `${year}.${month}`
+        return month < 10 ? `${year}.0${month}` : `${year}.${month}`
     }
 
     render(){

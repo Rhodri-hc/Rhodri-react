@@ -13,7 +13,7 @@ const axios = Axios.create(requestConfig);
 
 /**
  * 请求拦截器
- * 在发起请求前，我们会检查vuex中是否存在token等数据，如果存在的话。每次请求都会携带过去。
+ * 在发起请求前，我们会检查是否存在token等数据，如果存在的话。每次请求都会携带过去。
  *
  * tip:
  * 1. 如果需要修改baseURL 只需要在调用方法的地方，传递配置 { baseURL : "https://www.timewait.com" }即可覆盖原有配置。
@@ -58,4 +58,15 @@ axios.interceptors.response.use(
   }
 );
 
-export default axios;
+/**
+ * @desc 基于axios进行二次包裹的http请求函数
+ * @param { Object } options axios配置
+ * @param { String } method 请求方式
+ * @date 2021年3月19日09:31:48
+ */
+export const http = (option = {} , method = "get") => {
+  return axios({
+    method,
+    ...option
+  })
+};
