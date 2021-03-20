@@ -21,7 +21,7 @@ class Footer extends Component {
 
     render(){
         return(
-            <div className="fixed inset-x-0  bottom-3 flex flex-col items-center text-sm opacity-75 ">
+            <div className="pt-15 pb-5 flex flex-col items-center text-sm opacity-75 ">
                 <div className="relative inline-flex justify-center">
                     <span className="pr-2">Crafted With</span>
                     <CreaterHeart /> 

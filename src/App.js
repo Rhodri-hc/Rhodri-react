@@ -13,28 +13,31 @@ import Draggable from 'react-draggable';
 class App extends Component {
   render(){
     return (
-      <div className="font-sans">
-        <Header />
+      <div className="font-sans flex flex-col justify-between h-screen">
+        <div>
+          <Header />
 
-        <BrowserRouter>
-          <div>
-            <Route path='/' exact render={()=><Home />}></Route>
-            <Route path='/article' exact render={()=><Article />}></Route>
-            <Route path='/about' exact render={()=><About  />}></Route>
-          </div>
-        </BrowserRouter>
+          <BrowserRouter>
+            <div>
+              <Route path='/' exact render={()=><Home />}></Route>
+              <Route path='/article' exact render={()=><Article />}></Route>
+              <Route path='/about' exact render={()=><About  />}></Route>
+            </div>
+          </BrowserRouter>
+          
+          <Draggable 
+            handle=".handle" 
+            defaultPosition={{x: 0, y: 0}} 
+            position={null} 
+            grid={[25, 25]} 
+            scale={1} 
+          > 
+            <Ultraman className="handle  z-20 w-12 md:w-16 h-12 md:h-16 fixed inset-y-0 left-0 bg-contain rounded-full border-2 border-gray-400 shadow-xl cursor-pointer inline-block"></Ultraman> 
+          </Draggable>
+        </div>
         
-        <Draggable 
-          handle=".handle" 
-          defaultPosition={{x: 0, y: 0}} 
-          position={null} 
-          grid={[25, 25]} 
-          scale={1} 
-        > 
-          <Ultraman className="handle  z-20 w-12 md:w-16 h-12 md:h-16 fixed inset-y-0 left-0 bg-contain rounded-full border-2 border-gray-400 shadow-xl cursor-pointer inline-block"></Ultraman> 
-        </Draggable>
 
-        <Footer />
+        <Footer className="mt-auto flex-shrink-0"/>
 
       </div>
     )
